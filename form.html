@@ -4,54 +4,124 @@
 <head>
     <title>Movieplatform</title>
     <style>
-
+        .container {
+            width: 50%;
+            height: 900px;
+            background-color: rgb(48, 48, 48);
+            position: relative;
+            margin: 0 auto;
+            padding: 24px;
+            border-radius: 25px;
+            color: white;
+        }
+        
+        .field-style {
+            border-width: 2px;
+            border-style: solid;
+            padding: 7px;
+            font-size: 13px;
+            background-color: #8a8a8a;
+            border-color: #cccccc;
+            box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, .75);
+        }
     </style>
 </head>
 
 <body>
-    <h1>Upload form</h1>
-    <p>Fill in the fields with the correct info about the movie</p>
+    <div class="container">
+        <h1>Upload form</h1>
+        <p>Fill in the fields with the correct info about the movie</p>
 
-    <form>
-        <label for="title">Title:</label>
-        <input type="text" id="title">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="title">Title:</label></td>
+                    <td><input type="text" id="title"></td>
+                </tr>
+                <tr>
+                    <td><label for="directedBy">Directed by:</label></td>
+                    <td><input type="text" id="directedBy"></td>
+                </tr>
+                <tr>
+                    <td><label for="releaseDate">Release date:</label></td>
+                    <td><input type="text" id="releaseDate" placeholder="dd-mm-yyyy"></td>
+                </tr>
+                <tr>
+                    <td><label for="originalLanguage">Original language:</label></td>
+                    <td><input type="text" id="originalLanguage"></td>
+                </tr>
+                <tr>
+                    <td><label for="producedBy">Produced by:</label></td>
+                    <td><input type="text" id="producedBy"></td>
+                </tr>
+                <tr>
+                    <td><label for="duration">Duration (in minutes):</label></td>
+                    <td><input type="text" id="duration"></td>
+                </tr>
+                <tr>
+                    <td><label for="soundtrack">Soundtrack:</label></td>
+                    <td><input type="text" id="soundtrack"> </td>
+                </tr>
+
+                <tr>
+                    <td><label for="country">Country of origin:</label></td>
+                    <td><input type="text" id="country"></td>
+                </tr>
+                <tr>
+                    <td><label for="cast">Cast members:</label></td>
+                    <td><textarea name="cast" id="cast" cols="25" rows="5" placeholder="Write the castmembers down using a comma after each name."></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="summary">Summary:</label></td>
+                    <td><textarea name="summary" id="summary" cols="25" rows="5" placeholder="Write a summary of the movie here but no spoilers!"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Book adaptation:</p>
+                    </td>
+                    <td><input type="radio" name="adaptation" value="yes">Yes</td>
+                    <br>
+                    <td><input type="radio" name="adaptation" value="no">No</td>
+                </tr>
+
+            </table>
+
+
+
+
+            <br>
+            <p>Select all viewer advisory warnings that apply:</p>
+            <input type="radio" name="age" value="all" id="option-1">
+            <label for="option-1">Suitable for all ages</label>
+            <input type="radio" name="age" value="sixUp" id="option-2">
+            <label for="option-2">Suitable for ages 6 and up</label>
+            <input type="radio" name="age" value="twelveUp" id="option-3">
+            <label for="option-3">Suitable for ages 12 and up</label>
+            <input type="radio" name="age" value="sixteenUp" id="option-4">
+            <label for="option-4">Suitable for ages 16 and up</label>
+            <input type="radio" name="age" value="eighteenUp" id="option-5">
+            <label for="option-5">Suitable for ages 18 and up</label>
+            <br><br>
+            <input type="radio" name="sex" value="sex" id="option-6">
+            <label for="option-6">Contains sex or nudity</label>
+            <input type="radio" name="drugs" value="drugs" id="option-7">
+            <label for="option-7">Contains drugs and/or alcohol</label>
+            <input type="radio" name="violence" value="violence" id="option-8">
+            <label for="option-8">Contains violence</label>
+            <input type="radio" name="fear" value="fear" id="option-9>">
+            <label for="option-9">Can cause fear</label>
+            <input type="radio" name="discrimination" value="discrimination" id="option-10">
+            <label for="option-10">Contains discrimination</label>
+            <input type="radio" name="foulLanguage" value="foulLanguage" id="option-11">
+            <label for="option-11">Contains foul language</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
         <br>
-        <label for="directedBy">Directed by:</label>
-        <input type="text" id="directedBy">
-        <br>
-        <label for="releaseDate">Release date(dd-mm-yyyy):</label>
-        <input type="text" id="releaseDate">
-        <br>
-        <label for="originalLanguage">Original language:</label>
-        <input type="text" id="originalLanguage">
-        <br>
-        <p>Select all viewer advisory warnings that apply:</p>
-        <input type="radio" name="age" value="all" id="option-1>">
-        <label for="option-1">Suitable for all ages</label>
-        <input type="radio" name="age" value="sixUp" id="option-2>">
-        <label for="option-2">Suitable for ages 6 and up</label>
-        <input type="radio" name="age" value="twelveUp" id="option-3>">
-        <label for="option-3">Suitable for ages 12 and up</label>
-        <input type="radio" name="age" value="sixteenUp" id="option-4>">
-        <label for="option-4">Suitable for ages 16 and up</label>
-        <input type="radio" name="age" value="eighteenUp" id="option-5>">
-        <label for="option-5">Suitable for ages 18 and up</label>
-        <br><br>
-        <input type="radio" name="sex" value="sex" id="option-6>">
-        <label for="option-6">Contains sex or nudity</label>
-        <input type="radio" name="drugs" value="drugs" id="option-7>">
-        <label for="option-7">Contains drugs and/or alcohol</label>
-        <input type="radio" name="violence" value="violence" id="option-8>">
-        <label for="option-8">Contains violence</label>
-        <input type="radio" name="fear" value="fear" id="option-9>">
-        <label for="option-9">Can cause fear</label>
-        <input type="radio" name="discrimination" value="discrimination" id="option-10>">
-        <label for="option-10">Contains discrimination</label>
-        <input type="radio" name="foulLanguage" value="foulLanguage" id="option-11>">
-        <label for="option-11">Contains foul language</label>
-    </form>
-    <br>
-    <a href="index.html">About</a>
+        <a href="index.html">About</a>
+
+    </div>
+
 </body>
 
 </html>
