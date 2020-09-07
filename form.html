@@ -3,16 +3,41 @@
 
 <head>
     <title>Movieplatform</title>
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
     <style>
+        body {
+            background-image: url("assets/img/159889584805467782.gif");
+            background-repeat: repeat-x;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-family: 'Alfa Slab One';
+            font-size: 32px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px #db7d2f;
+            color: #f9d500;
+            margin-top: 0px;
+        }
+        
+        h2 {
+            font-family: 'Alfa Slab One';
+            font-size: 18px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px #db7d2f;
+            color: #f9d500;
+        }
+        
         .container {
             width: 50%;
             height: 900px;
-            background-color: rgb(48, 48, 48);
+            background-color: #000000;
             position: relative;
             margin: 0 auto;
             padding: 24px;
             border-radius: 25px;
-            color: white;
+            color: #f9d500;
         }
         
         .field-style {
@@ -24,13 +49,37 @@
             border-color: #cccccc;
             box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, .75);
         }
+        
+        input[type="radio"] {
+            margin-left: 0px;
+        }
+        
+        input[type="text"] {
+            background-color: #410404;
+            border-color: #f9d400;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 6px;
+            padding: 2px;
+            color: #f9d400;
+            font-size: 14px;
+            box-shadow: 0px 0px 6px 0px #db7d2f;
+            text-shadow: 0px 0px 0px rgba(42, 42, 42, .75);
+            font-weight: normal;
+            font-style: none;
+            font-family: sans-serif;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Upload form</h1>
-        <p>Fill in the fields with the correct info about the movie</p>
+        <h2>Fill in the fields with the correct info about the movie</h2>
 
         <form>
             <table>
@@ -75,6 +124,30 @@
                     <td><label for="summary">Summary:</label></td>
                     <td><textarea name="summary" id="summary" cols="25" rows="5" placeholder="Write a summary of the movie here but no spoilers!"></textarea></td>
                 </tr>
+
+
+                <tr>
+
+                    <td><label for="genre">Choose a genre:</label></td>
+                    <td><select name="genre" id="genre"> 
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="action">Action</option>
+                    <option value="romance">Romance</option>
+                    <option value="detective">Detective</option>
+                    <option value="drama">Drama</option></td> </select>
+
+                </tr>
+                <tr>
+
+                    <td><label for="sequel">Sequel:</label></td>
+                    <td><select name="sequel" id="sequel"> 
+                    <option value="isSequel">This movie is a sequel</option>
+                    <option value="hasSequel">This movie has a sequel</option>
+                    <option value="noneOfAbove">None of the above</option></td></select>
+
+                </tr>
                 <tr>
                     <td>
                         <p>Book adaptation:</p>
@@ -83,14 +156,14 @@
                     <br>
                     <td><input type="radio" name="adaptation" value="no">No</td>
                 </tr>
-
             </table>
 
 
 
 
             <br>
-            <p>Select all viewer advisory warnings that apply:</p>
+            <td><label for="viewerWarnings">all viewer advisory warnings that apply:</label></td>
+            <br><br>
             <input type="radio" name="age" value="all" id="option-1">
             <label for="option-1">Suitable for all ages</label>
             <input type="radio" name="age" value="sixUp" id="option-2">
@@ -116,6 +189,7 @@
             <label for="option-11">Contains foul language</label>
             <br><br>
             <input type="submit" value="Submit">
+
         </form>
         <br>
         <a href="index.html">About</a>
