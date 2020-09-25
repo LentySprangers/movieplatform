@@ -5,34 +5,39 @@
     <title>Movieplatform</title>
     <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
     <style>
+        @font-face {
+            font-family: "unicode.aachenb.ttf";
+            src: url("assets/fonts/unicode.aachenb.ttf");
+        }
+        
         body {
             background-image: url("assets/img/159889584805467782.gif");
-            background-repeat: repeat-x;
+            background-attachment: fixed;
             font-family: sans-serif;
             letter-spacing: 1px;
         }
         
         h1 {
-            font-family: 'Alfa Slab One';
+            font-family: 'unicode.aachenb.ttf';
             font-size: 32px;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px #db7d2f;
+            letter-spacing: 1px;
+            text-shadow: 0px 4px 0px #db7d2f;
             color: #f9d500;
             margin-top: 0px;
         }
         
         h2 {
-            font-family: 'Alfa Slab One';
-            font-size: 18px;
+            font-family: 'unicode.aachenb.ttf';
+            font-size: 20px;
             letter-spacing: 3px;
-            text-shadow: 2px 2px #db7d2f;
+            text-shadow: 0px 4px 0px #db7d2f;
             color: #f9d500;
         }
         
         .container {
             width: 50%;
             height: 900px;
-            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.85);
             position: relative;
             margin: 0 auto;
             padding: 24px;
@@ -78,58 +83,58 @@
 
 <body>
     <div class="container">
-        <h1>Upload form</h1>
-        <h2>Fill in the fields with the correct info about the movie</h2>
+        <h1>Upload form</h1><img src="assets/img/—Pngtree—cinema popcorn decoration illustration_4514619.png" width="100" height="80">
+        < h2>Fill in the fields with the correct info about the movie</h2>
 
-        <form>
-            <table>
-                <tr>
-                    <td><label for="title">Title:</label></td>
-                    <td><input type="text" id="title"></td>
-                </tr>
-                <tr>
-                    <td><label for="directedBy">Directed by:</label></td>
-                    <td><input type="text" id="directedBy"></td>
-                </tr>
-                <tr>
-                    <td><label for="releaseDate">Release date:</label></td>
-                    <td><input type="text" id="releaseDate" placeholder="dd-mm-yyyy"></td>
-                </tr>
-                <tr>
-                    <td><label for="originalLanguage">Original language:</label></td>
-                    <td><input type="text" id="originalLanguage"></td>
-                </tr>
-                <tr>
-                    <td><label for="producedBy">Produced by:</label></td>
-                    <td><input type="text" id="producedBy"></td>
-                </tr>
-                <tr>
-                    <td><label for="duration">Duration (in minutes):</label></td>
-                    <td><input type="text" id="duration"></td>
-                </tr>
-                <tr>
-                    <td><label for="soundtrack">Soundtrack:</label></td>
-                    <td><input type="text" id="soundtrack"> </td>
-                </tr>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="title">Title:</label></td>
+                        <td><input type="text" id="title"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="directedBy">Directed by:</label></td>
+                        <td><input type="text" id="directedBy"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="releaseDate">Release date:</label></td>
+                        <td><input type="text" id="releaseDate" placeholder="dd-mm-yyyy"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="originalLanguage">Original language:</label></td>
+                        <td><input type="text" id="originalLanguage"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="producedBy">Produced by:</label></td>
+                        <td><input type="text" id="producedBy"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="duration">Duration (in minutes):</label></td>
+                        <td><input type="text" id="duration"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soundtrack">Soundtrack:</label></td>
+                        <td><input type="text" id="soundtrack"> </td>
+                    </tr>
 
-                <tr>
-                    <td><label for="country">Country of origin:</label></td>
-                    <td><input type="text" id="country"></td>
-                </tr>
-                <tr>
-                    <td><label for="cast">Cast members:</label></td>
-                    <td><textarea name="cast" id="cast" cols="25" rows="5" placeholder="Write the castmembers down using a comma after each name."></textarea></td>
-                </tr>
-                <tr>
-                    <td><label for="summary">Summary:</label></td>
-                    <td><textarea name="summary" id="summary" cols="25" rows="5" placeholder="Write a summary of the movie here but no spoilers!"></textarea></td>
-                </tr>
+                    <tr>
+                        <td><label for="country">Country of origin:</label></td>
+                        <td><input type="text" id="country"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cast">Cast members:</label></td>
+                        <td><textarea name="cast" id="cast" cols="25" rows="5" placeholder="Write the castmembers down using a comma after each name."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="summary">Summary:</label></td>
+                        <td><textarea name="summary" id="summary" cols="25" rows="5" placeholder="Write a summary of the movie here but no spoilers!"></textarea></td>
+                    </tr>
 
 
-                <tr>
+                    <tr>
 
-                    <td><label for="genre">Choose a genre:</label></td>
-                    <td><select name="genre" id="genre"> 
+                        <td><label for="genre">Choose a genre:</label></td>
+                        <td><select name="genre" id="genre"> 
                     <option value="comedy">Comedy</option>
                     <option value="horror">Horror</option>
                     <option value="thriller">Thriller</option>
@@ -138,61 +143,61 @@
                     <option value="detective">Detective</option>
                     <option value="drama">Drama</option></td> </select>
 
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
 
-                    <td><label for="sequel">Sequel:</label></td>
-                    <td><select name="sequel" id="sequel"> 
+                        <td><label for="sequel">Sequel:</label></td>
+                        <td><select name="sequel" id="sequel"> 
                     <option value="isSequel">This movie is a sequel</option>
                     <option value="hasSequel">This movie has a sequel</option>
                     <option value="noneOfAbove">None of the above</option></td></select>
 
-                </tr>
-                <tr>
-                    <td>
-                        <p>Book adaptation:</p>
-                    </td>
-                    <td><input type="radio" name="adaptation" value="yes">Yes</td>
-                    <br>
-                    <td><input type="radio" name="adaptation" value="no">No</td>
-                </tr>
-            </table>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Book adaptation:</p>
+                        </td>
+                        <td><input type="radio" name="adaptation" value="yes">Yes</td>
+                        <br>
+                        <td><input type="radio" name="adaptation" value="no">No</td>
+                    </tr>
+                </table>
 
 
 
 
+                <br>
+                <td><label for="viewerWarnings">all viewer advisory warnings that apply:</label></td>
+                <br><br>
+                <input type="radio" name="age" value="all" id="option-1">
+                <label for="option-1">Suitable for all ages</label>
+                <input type="radio" name="age" value="sixUp" id="option-2">
+                <label for="option-2">Suitable for ages 6 and up</label>
+                <input type="radio" name="age" value="twelveUp" id="option-3">
+                <label for="option-3">Suitable for ages 12 and up</label>
+                <input type="radio" name="age" value="sixteenUp" id="option-4">
+                <label for="option-4">Suitable for ages 16 and up</label>
+                <input type="radio" name="age" value="eighteenUp" id="option-5">
+                <label for="option-5">Suitable for ages 18 and up</label>
+                <br><br>
+                <input type="radio" name="sex" value="sex" id="option-6">
+                <label for="option-6">Contains sex or nudity</label>
+                <input type="radio" name="drugs" value="drugs" id="option-7">
+                <label for="option-7">Contains drugs and/or alcohol</label>
+                <input type="radio" name="violence" value="violence" id="option-8">
+                <label for="option-8">Contains violence</label>
+                <input type="radio" name="fear" value="fear" id="option-9>">
+                <label for="option-9">Can cause fear</label>
+                <input type="radio" name="discrimination" value="discrimination" id="option-10">
+                <label for="option-10">Contains discrimination</label>
+                <input type="radio" name="foulLanguage" value="foulLanguage" id="option-11">
+                <label for="option-11">Contains foul language</label>
+                <br><br>
+                <input type="submit" value="Submit">
+
+            </form>
             <br>
-            <td><label for="viewerWarnings">all viewer advisory warnings that apply:</label></td>
-            <br><br>
-            <input type="radio" name="age" value="all" id="option-1">
-            <label for="option-1">Suitable for all ages</label>
-            <input type="radio" name="age" value="sixUp" id="option-2">
-            <label for="option-2">Suitable for ages 6 and up</label>
-            <input type="radio" name="age" value="twelveUp" id="option-3">
-            <label for="option-3">Suitable for ages 12 and up</label>
-            <input type="radio" name="age" value="sixteenUp" id="option-4">
-            <label for="option-4">Suitable for ages 16 and up</label>
-            <input type="radio" name="age" value="eighteenUp" id="option-5">
-            <label for="option-5">Suitable for ages 18 and up</label>
-            <br><br>
-            <input type="radio" name="sex" value="sex" id="option-6">
-            <label for="option-6">Contains sex or nudity</label>
-            <input type="radio" name="drugs" value="drugs" id="option-7">
-            <label for="option-7">Contains drugs and/or alcohol</label>
-            <input type="radio" name="violence" value="violence" id="option-8">
-            <label for="option-8">Contains violence</label>
-            <input type="radio" name="fear" value="fear" id="option-9>">
-            <label for="option-9">Can cause fear</label>
-            <input type="radio" name="discrimination" value="discrimination" id="option-10">
-            <label for="option-10">Contains discrimination</label>
-            <input type="radio" name="foulLanguage" value="foulLanguage" id="option-11">
-            <label for="option-11">Contains foul language</label>
-            <br><br>
-            <input type="submit" value="Submit">
-
-        </form>
-        <br>
-        <a href="index.html">About</a>
+            <a href="index.html">About</a>
 
     </div>
 
