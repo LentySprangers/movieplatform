@@ -8,7 +8,7 @@ body {
 }
 
 #search-bar {
-    background-color: #3B3B3B;
+    background-color: #3b3b3ba6
 }
 
 .searchfield {
@@ -56,7 +56,7 @@ p {
 }
 
 .footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.45)
 }
 
 h1 {
@@ -64,12 +64,15 @@ h1 {
 }
 
 #movie-info {
-    background-color: #3B3B3B;
+    background-color: #3b3b3ba6;
 }
 
 h1 a {
     color: red;
     text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40;
+    letter-spacing: 3px;
 }
 
 h4 a {
@@ -82,7 +85,7 @@ h4 a {
     color: white;
 }
 
-#filter-expand .card .card-header {
+#filter-expand>.card>.card-header {
     background-color: rgba(0, 0, 0, 0.45)
 }
 
@@ -92,4 +95,8 @@ h4 a {
 
 #filter-expand .card .card-header h2 .btn-link:hover {
     color: red;
+}
+
+.form-layout {
+    color: white;
 }
