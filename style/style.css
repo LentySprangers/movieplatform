@@ -1,0 +1,95 @@
+body {
+    background-image: url("../assets/img/159889584805467782.gif");
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+#search-bar {
+    background-color: #3B3B3B;
+}
+
+.searchfield {
+    margin-top: auto;
+    width: 100px;
+    background-color: #3B3B3B;
+}
+
+.searchfield:hover {
+    color: red;
+}
+
+#movie-carousel {
+    background-color: grey;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.movie-poster {
+    margin: 10px;
+}
+
+.movie-poster-img:hover {
+    border: red solid 2px;
+}
+
+#side-bar,
+#movie-overview {
+    background-color: #3b3b3ba6;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+p {
+    color: white;
+    font-size: large;
+}
+
+.footer {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#movie-info {
+    background-color: #3B3B3B;
+}
+
+h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+#filter-expand .card {
+    background: none;
+    color: white;
+}
+
+#filter-expand .card .card-header {
+    background-color: rgba(0, 0, 0, 0.45)
+}
+
+#filter-expand .card .card-header h2 .btn-link {
+    color: white;
+}
+
+#filter-expand .card .card-header h2 .btn-link:hover {
+    color: red;
+}
