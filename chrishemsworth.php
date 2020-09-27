@@ -12,17 +12,14 @@ include('inc/head.php');
 include('inc/header.php');
 
 ?>
-            <div id="movie-info" class="row justify-content-center" style="margin: 20px">
-                <div class="col">
-
-
-
-                    <img src="assets\img\chrishemsworth.jpg" alt="ChrisHemsworth" width="400px" height="550px"
-                        style="margin: 70px;"></img>
+            <div id="movie-info" class="row justify-content-center m-2">
+                <div class="col text-center">
+                    <img src="assets\img\chrishemsworth.jpg" alt="ChrisHemsworth" width="400" height="550"
+                        class="my-4 mx-3"></img>
                 </div>
                 <div class="col">
-                    <h1 style="text-align: center; margin-top:50px; margin-bottom:15px;">Chris Hemsworth</h1>
-                    <p style="text-align: center;">Born: August 11th 1983<br></p>
+                    <h1 class="my-2 text-center ">Chris Hemsworth</h1>
+                    <p class="text-center">Born: August 11th 1983</p>
                     <p>Chris Hemsworth is an Australian actor. He first rose to prominence in Australia playing Kim Hyde
                         in the
                         Australian television series Home and Away (2004–07) before beginning a film career in

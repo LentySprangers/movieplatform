@@ -3,6 +3,11 @@ body {
     background-attachment: fixed;
 }
 
+ul {
+    color: white;
+    list-style: none;
+}
+
 .container {
     background-color: rgba(0, 0, 0, 0.829);
 }
@@ -55,15 +60,12 @@ p {
     font-size: large;
 }
 
-.footer {
-    background-color: rgba(0, 0, 0, 0.45)
-}
-
 h1 {
     color: white;
 }
 
-#movie-info {
+#movie-info,
+.add-movie-page {
     background-color: #3b3b3ba6;
 }
 
@@ -85,7 +87,8 @@ h4 a {
     color: white;
 }
 
-#filter-expand>.card>.card-header {
+#filter-expand>.card>.card-header,
+.footer {
     background-color: rgba(0, 0, 0, 0.45)
 }
 
@@ -99,4 +102,9 @@ h4 a {
 
 .form-layout {
     color: white;
+}
+
+.check-list li {
+    color: white;
+    list-style: none;
 }
