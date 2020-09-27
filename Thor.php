@@ -22,7 +22,26 @@ include('inc/header.php');
                     <p class="text-center">Release date (USA): November 8th 2013</p>
                     <p> the Dark Elves attempt to plunge the universe into darkness, Thor must
                         embark on a perilous
-                        and personal journey that will reunite him with doctor Jane Foster.</p><br>
+                        and personal journey that will reunite him with doctor Jane Foster.</p>
+                    <button class="btn btn-primary read-more-button" type="button" data-toggle="collapse" data-target="#collapse-button"
+                        aria-expanded="false" aria-controls="collapse-button">
+                        Read more...
+                    </button>
+                    </p>
+                    <div class="collapse" id="collapse-button">
+                        <div class="card card-body">
+                            Thor: The Dark World is a 2013 American superhero film based on the Marvel Comics character
+                            Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It
+                            is the sequel to Thor (2011) and the eighth film in the Marvel Cinematic Universe (MCU). The
+                            film was directed by Alan Taylor from a screenplay by Christopher Yost and the writing team
+                            of Christopher Markus and Stephen McFeely. It stars Chris Hemsworth as Thor alongside
+                            Natalie Portman, Tom Hiddleston, Anthony Hopkins, Stellan Skarsgård, Idris Elba, Christopher
+                            Eccleston, Adewale Akinnuoye-Agbaje, Kat Dennings, Ray Stevenson, Zachary Levi, Tadanobu
+                            Asano, Jaimie Alexander, and Rene Russo. In the film, Thor and Loki team up to save the Nine
+                            Realms from the Dark Elves.
+                        </div>
+                    </div>
+                    <br>
                     <p style="font-size: smaller;"><b>Xiomax</b> said about Thor: The Dark World: <i>"I really loved
                             this movie!" <b>* * * *</b></i></p>
                     <p style="font-size: smaller;"><b>Yomomma</b> said about Thor: The Dark World: <i>"I enjoyed

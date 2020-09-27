@@ -1,6 +1,7 @@
 body {
     background-image: url("../assets/img/159889584805467782.gif");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 ul {
@@ -98,6 +99,22 @@ h4 a {
 
 #filter-expand .card .card-header h2 .btn-link:hover {
     color: red;
+}
+
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 0%;
+}
+
+.read-more-button,
+.read-more-button:hover,
+.read-more-button:active,
+.read-more-button:focus,
+.read-more-button:focus {
+    background-color: red !important;
+    border-color: black !important;
+    box-shadow: none !important;
 }
 
 .form-layout {
